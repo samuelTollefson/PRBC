@@ -315,6 +315,8 @@ p {
         -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
         box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
     }  
+}
+@media(max-width:767px){
     .navbar-default.trans-after{
         background-color: #333 !important;
         border: 0 !important;
@@ -324,12 +326,6 @@ p {
         -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
         box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
     }  
-	.navbar-default.trans-before a img{
-    content:url(../img/PRBClogoSmall.png);
-	}
-	.navbar-default.trans-after a img{
-    content:url(../img/PRBClogoSmallInvert.png);
-	}
 }
 .navbar-default.trans-before li a{
     color:#333;
@@ -345,9 +341,33 @@ p {
 }
 .navbar-default.trans-before a img{
     content:url(../img/PRBClogoSmall.png);
+	width:60%; 
+	height:60%;
 }
 .navbar-default.trans-after a img{
     content:url(../img/PRBClogoSmallInvert.png);
+	width:60%; 
+	height:60%;
+}
+@media(max-width:767px){
+    .navbar-default.trans-before a img{
+		content:url(../img/PRBClogoSmall.png);
+		width:6em; 
+		height:4em;
+		position: absolute;
+		left: 50px;
+		top: 7px;
+	}
+}
+@media(max-width:767px){
+	.navbar-default.trans-after a img{
+		content:url(../img/PRBClogoSmallInvert.png);
+		width:6em; 
+		height:4em;
+		position: absolute;
+		left: 50px;
+		top: 7px;
+	} 
 }
 
 .one-page-static-wrap{
