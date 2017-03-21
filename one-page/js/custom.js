@@ -130,6 +130,115 @@ wow.init();
     $("[data-toggle=popover]").popover();
     
     $("[data-toggle=tooltip]").tooltip();
+	
+	
+/* ==============================================
+ custom PRBC
+ =============================================== */
   
-
+         var myIndex = 0;
+         carousel();
+         
+         function carousel() {
+             var i;
+             var x = document.getElementsByClassName("mySlides");
+         
+             for (i = 0; i < x.length; i++) {
+                 $(x[i]).fadeOut(1000);
+             }
+         
+             myIndex++;
+         
+             if (myIndex > x.length) {
+                 myIndex = 1;
+             }
+             $(x[myIndex - 1]).stop().fadeIn(1000);
+         
+             setTimeout(carousel, 7000);
+         };
+         
+         $(document).ready(function() {
+         $("#biblicalAuth").show().delay(100);
+         });
+         
+         $("#biblicalAuthLi").click(function(){
+         $("#autonomyOf").hide();
+         $("#priesthoodOf").hide();
+         $("#twoOrdinances").hide();
+         $("#individualSoul").hide();
+         $("#savedAndBaptized").hide();
+         $("#twoOffices").hide();
+         $("#sepChurchState").hide();
+         $("#biblicalAuth").show().delay(100);
+         });
+         $("#autonomyOfLi").click(function(){
+         $("#biblicalAuth").hide();
+         $("#priesthoodOf").hide();
+         $("#twoOrdinances").hide();
+         $("#individualSoul").hide();
+         $("#savedAndBaptized").hide();
+         $("#twoOffices").hide();
+         $("#sepChurchState").hide();
+         $("#autonomyOf").show().delay(100);
+         });
+         $("#priesthoodOfLi").click(function(){
+         $("#biblicalAuth").hide();
+         $("#autonomyOf").hide();
+         $("#twoOrdinances").hide();
+         $("#individualSoul").hide();
+         $("#savedAndBaptized").hide();
+         $("#twoOffices").hide();
+         $("#sepChurchState").hide();
+         $("#priesthoodOf").show().delay(100);
+         });
+         $("#twoOrdinancesLi").click(function(){
+         $("#biblicalAuth").hide();
+         $("#autonomyOf").hide();
+         $("#priesthoodOf").hide();
+         $("#individualSoul").hide();
+         $("#savedAndBaptized").hide();
+         $("#twoOffices").hide();
+         $("#sepChurchState").hide();
+         $("#twoOrdinances").show().delay(100);
+         });
+         $("#individualSoulLi").click(function(){
+         $("#biblicalAuth").hide();
+         $("#autonomyOf").hide();
+         $("#priesthoodOf").hide();
+         $("#twoOrdinances").hide();
+         $("#savedAndBaptized").hide();
+         $("#twoOffices").hide();
+         $("#sepChurchState").hide();
+         $("#individualSoul").show().delay(100);
+         });
+         $("#savedAndBaptizedLi").click(function(){
+         $("#biblicalAuth").hide();
+         $("#autonomyOf").hide();
+         $("#priesthoodOf").hide();
+         $("#twoOrdinances").hide();
+         $("#individualSoul").hide();
+         $("#twoOffices").hide();
+         $("#sepChurchState").hide();
+         $("#savedAndBaptized").show().delay(100);
+         });
+         $("#twoOfficesLi").click(function(){
+         $("#biblicalAuth").hide();
+         $("#autonomyOf").hide();
+         $("#priesthoodOf").hide();
+         $("#twoOrdinances").hide();
+         $("#individualSoul").hide();
+         $("#savedAndBaptized").hide();
+         $("#sepChurchState").hide();
+         $("#twoOffices").show().delay(100);
+         });
+         $("#sepChurchStateLi").click(function(){
+         $("#biblicalAuth").hide();
+         $("#autonomyOf").hide();
+         $("#priesthoodOf").hide();
+         $("#twoOrdinances").hide();
+         $("#individualSoul").hide();
+         $("#savedAndBaptized").hide();
+         $("#twoOffices").hide();
+         $("#sepChurchState").show().delay(100);
+         });
 

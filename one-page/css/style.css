@@ -186,6 +186,20 @@ p {
 /*-----------------------------------------------------------------------------------*/
 /*	DIVIDERS
 /*-----------------------------------------------------------------------------------*/
+.divide10 {
+    width: 100%;
+    height: 10px;
+}
+
+.divide20 {
+    width: 100%;
+    height: 20px;
+}
+
+.divide25 {
+    width: 100%;
+    height: 25px;
+}
 
 .divide30 {
     width: 100%;
@@ -215,6 +229,11 @@ p {
 .divide80 {
     width: 100%;
     height: 80px;
+}
+
+.divide640 {
+    width: 100%;
+    height: 640px;
 }
 
 /*margins*/
@@ -260,7 +279,7 @@ p {
 .navbar-brand{
     font-weight: 800;
     color:#fff !important;
-    font-size: 30px;
+    font-size: 26px;
     line-height: 14px;
 }
 .navbar-default .navbar-nav>li>a {
@@ -274,12 +293,12 @@ p {
 }
 /*transparent header*/
 .navbar-default.trans-before{
-    background-color:#333;
+    background-color:#fff;
     box-shadow: none;
     width:100%;
 }
 .navbar-default.trans-after{
-    background: #333;
+    background-color:#333;
     border: 0;
     width: 100%;
     -moz-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
@@ -288,6 +307,17 @@ p {
 }
 @media(max-width:767px){
     .navbar-default.trans-before{
+        background-color: #fff !important;
+        border: 0 !important;
+        text-align: center;
+        width:100%;
+        -moz-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+        -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    }  
+}
+@media(max-width:767px){
+    .navbar-default.trans-after{
         background-color: #333 !important;
         border: 0 !important;
         text-align: center;
@@ -298,10 +328,22 @@ p {
     }  
 }
 .navbar-default.trans-before li a{
-    color:#fff;
+    color:#333;
 }
 .navbar-default.trans-before .navbar-brand{
+    color:#333 !important;
+}
+.navbar-default.trans-after li a{
+    color:#fff;
+}
+.navbar-default.trans-after .navbar-brand{
     color:#fff !important;
+}
+.navbar-default.trans-before a img{
+    content:url(../img/PRBClogoSmall.png);
+}
+.navbar-default.trans-after a img{
+    content:url(../img/PRBClogoSmallInvert.png);
 }
 
 .one-page-static-wrap{
@@ -988,4 +1030,60 @@ h3.heading-progress {
     background: #f99200;
     box-shadow: none;
     -webkit-box-shadow: none;
+}
+
+#aboutPastor.in,
+#aboutPastor.collapsing {
+    display: block!important;
+}
+#messagePastor.in,
+#messagePastor.collapsing {
+    display: block!important;
+}
+#biblicalPreach.in,
+#biblicalPreach.collapsing {
+    display: block!important;
+}
+#masculinityInM.in,
+#masculinityInM.collapsing {
+    display: block!important;
+}
+#tradHymns.in,
+#tradHymns.collapsing {
+    display: block!important;
+}
+#reverenceInW.in,
+#reverenceInW.collapsing {
+    display: block!important;
+}
+#familyAtmosph.in,
+#familyAtmosph.collapsing {
+    display: block!important;
+}
+#menAndWomenExcite.in,
+#menAndWomenExcite.collapsing {
+    display: block!important;
+}
+#ourServiceTimes.in,
+#ourServiceTimes.collapsing {
+    display: block!important;
+}
+
+.sliderImages{position:relative; z-index:0;}
+.bottomimg1{position:absolute; top:0; left:0; z-index:2}
+.topimg1{position:absolute; top:0; left:0; z-index:1}
+.bottomimg2{position:absolute; top:0; left:0; z-index:0}
+.topimg2{position:absolute; top:0; left:0; z-index:-1}
+
+
+.panel-heading .accordion-toggle:after {
+    /* symbol for "opening" panels */
+    font-family: 'Glyphicons Halflings';  /* essential for enabling glyphicon */
+    content: "\e114";    /* adjust as needed, taken from bootstrap.css */
+    float: right;        /* adjust as needed */
+    color: grey;         /* adjust as needed */
+}
+.panel-heading .accordion-toggle.collapsed:after {
+    /* symbol for "collapsed" panels */
+    content: "\e080";    /* adjust as needed, taken from bootstrap.css */
 }
